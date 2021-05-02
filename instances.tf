@@ -83,7 +83,4 @@ aws --profile ${var.profile} ec2 wait instance-status-ok --region ${var.region_w
 ansible-playbook --extra-vars 'passed_in_hosts=tag_Name_${self.tags.Name}' ansible_templates/jenkins-worker-sample.yml
 EOF
   }
-
-
-
 }

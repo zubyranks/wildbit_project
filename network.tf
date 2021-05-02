@@ -184,4 +184,3 @@ resource "aws_main_route_table_association" "set_worker_default_rt_assoc" {
   vpc_id         = aws_vpc.vpc_master_worker.id
   route_table_id = aws_route_table.internet_route_worker.id
 }
-

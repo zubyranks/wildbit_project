@@ -22,4 +22,3 @@ output "LB_DNS_NAME" {
 output "url" {
   value = aws_route53_record.jenkins.fqdn
 }
-

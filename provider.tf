@@ -13,4 +13,3 @@ provider "aws" {
   region  = var.region_worker
   alias   = "region_worker"
 }
-
