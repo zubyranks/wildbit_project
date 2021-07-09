@@ -1,6 +1,6 @@
 // Resource #21
 //Create ACM certificate resource that allows requesting and management of certificates 
-// from the Amazon Certificate Manager via DNS (Route53)
+// from the Amazon Certificate Manager via DNS (Route53).
 resource "aws_acm_certificate" "jenkins-lb-https" {
   provider          = aws.region_master
   domain_name       = join(".", ["jenkins", data.aws_route53_zone.dns.name])
