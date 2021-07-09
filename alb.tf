@@ -1,5 +1,5 @@
 // Resource #21
-// Creating ALB
+// Creating ALB.
 resource "aws_lb" "application_lb" {
   provider                   = aws.region_master
   name                       = "jenkins-lb"
